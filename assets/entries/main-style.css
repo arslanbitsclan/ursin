@@ -1,0 +1,806 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  max-width: 960px;
+}
+
+
+form {
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+select,
+button {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 20px;
+}
+
+.header-area {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.header-area .container {
+  width: 95%;
+}
+
+.logo-area {
+  width: 20%;
+  float: left;
+}
+
+.logo-area img {
+  width: 150px;
+  height: auto;
+}
+
+.menu-area {
+  float: right;
+  width: 80%;
+}
+
+.menu-area ul {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-area ul li {
+  display: inline-block;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #666;
+  transition: 0.3s;
+  line-height: 1;
+}
+
+.menu-area ul li a {
+  transition: .3s;
+}
+
+.menu-area ul #ques-mark img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 3px;
+  transition: .3s;
+}
+
+.menu-area ul #ques-mark img:hover {
+  transform: scale(1.08);
+}
+
+.menu-area ul li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.menu-area ul #wh-item #hw-active,
+.menu-area ul #wh-item:hover a {
+  color: #43935B;
+  transform: scale(1.15);
+}
+
+.menu-area ul #ex-item #exm-active,
+.menu-area ul #ex-item:hover a {
+  color: #A12731;
+  transform: scale(1.15);
+}
+
+.menu-area ul #ms-item #meg-active,
+.menu-area ul #ms-item:hover a {
+  color: #00A0EF;
+  transform: scale(1.15);
+}
+
+.menu-area ul #lk-item #ln-active,
+.menu-area ul #lk-item:hover a {
+  color: #94427F;
+  transform: scale(1.15);
+}
+
+.menu-area ul #cl-item #cl-active,
+.menu-area ul #cl-item:hover a {
+  color: #C0923B;
+  transform: scale(1.15);
+}
+
+.class-selection {
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element: */
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 8px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background: transparent;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  /*  background-color: rgba(0, 0, 0, 0.1);*/
+  background: #048ccc;
+}
+
+
+.form-area {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0 80px;
+  color: #fff;
+}
+
+.form-area label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.form-area input,
+.form-area textarea {
+  display: block;
+  padding: 6px 12px;
+  width: 30%;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  color: #666;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-area textarea {
+  border-radius: 27px;
+  max-width: 100%;
+  width: 90%;
+  padding: 10px 12px;
+}
+
+.form-area input[type=checkbox] {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.form-area p {
+  margin: 0;
+  position: relative;
+}
+
+.form-area p input {
+  display: inline-block;
+}
+
+input::-webkit-input-placeholder,
+input[type=date]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+input:-moz-placeholder,
+input[type=date]:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ddd;
+}
+
+input::-moz-placeholder,
+input[type=date]::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ddd;
+}
+
+input:-ms-input-placeholder,
+input[type=date]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ddd;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  color: #ddd;
+}
+
+#check-text {
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#check-text:hover {
+  text-decoration: underline;
+}
+
+.form-area #send {
+  width: 120px;
+  float: right;
+  background: white;
+  font-size: 28px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form-area #send:hover {
+  transform: scale(1.2, 1.1);
+}
+
+.form-bottom-selection {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.selection-part {
+  width: 40%;
+  float: left;
+  overflow: hidden;
+  margin-right: 3%;
+}
+
+.selection-part:last-child {
+  width: 14%;
+  margin-right: 0;
+}
+
+.selection-part select {
+  width: 100%;
+  padding: 5px 7px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 4px solid #fff;
+  background: #94427f;
+  color: #fff;
+}
+
+.selection-part .icon-box,
+.box-left-icon .icon-box {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #fff;
+  border-radius: 17px;
+  background: #00AEEF;
+  position: relative;
+}
+
+.box-left-icon .icon-box {
+  border: 4px solid #fff;
+  border-radius: 17px;
+  background: #94427f;
+}
+
+.selection-part img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.color-bar {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.color-bar ul {
+  /*  text-align: center;*/
+  margin: 0;
+}
+
+.color-bar ul li {
+  float: left;
+  /*  display: inline-block;*/
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.color-bar il li:last-child {
+  margin-right: 0;
+}
+
+.color-box {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: 4px solid #fff;
+  transition: 0.3s;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+#clr-ptr {
+  background: #00AEEF;
+}
+
+#clr-alg {
+  background: #EC008C;
+}
+
+#clr-carrot {
+  background: #F37121;
+}
+
+#clr-mblue {
+  background: #25408F;
+}
+
+#clr-amet {
+  background: #A42780;
+}
+
+#clr-org {
+  background: #B3C935;
+}
+
+.table-cont {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.message tr td {
+  vertical-align: top;
+}
+
+.box-left-icon {
+  width: 15%;
+  float: left;
+  overflow: hidden;
+}
+
+.message-link img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.form-h-text {
+  font-weight: 400;
+}
+
+.message .delete {
+  width: 30px;
+  height: 30px;
+  display: block;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.message .delete:hover {
+  background: red;
+  transform: scale(1.1);
+}
+
+.footer-area {
+  margin-top: 45px;
+}
+
+.footer-area p {
+  color: gray;
+}
+/*
+  additional menu
+*/
+.menu-area ul .drp-itm i {
+  transition: ;
+}
+
+.menu-area ul li {
+  position: relative;
+}
+
+.menu-area ul .drp-itm:first-child {
+  padding-left: 0px;
+}
+
+.menu-area ul li > ul {
+  position: absolute;
+  top: 35%;
+  left: 8px;
+  width: 250px;
+  float: none;
+  display: block;
+  text-align: left;
+  z-index: 9999;
+  display: none;
+}
+
+.menu-area ul li > ul li {
+  display: block;
+  padding: 8px 0 0;
+  border-right: 0;
+}
+.menu-area ul .drp-itm > ul li{
+  padding-left: 8px;
+}
+.menu-area ul .drp-itm i{
+  margin-left: 10px;
+}
+
+.menu-area ul .drp-itm > ul li:hover a{
+  color: #0f0f0f;
+}
+
+.menu-area ul li:hover > ul {
+  display: block;
+}
+
+.menu-area ul .drp-itm:hover > ul li a {
+  transform: scale(1);
+}
+
+.menu-area ul .drp-itm:hover i {
+  opacity: 0;
+}
+
+.menu-area ul #wh-item > ul li:hover a {
+  color: #1e6634;
+}
+.header-area {
+  padding-bottom: 95px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 287px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 115%;
+  left: 15%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.tooltippdf {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltippdf .tooltiptextpdf {
+  visibility: hidden;
+  width: 258px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 121%;
+  left: -140%;
+  margin-left: -60px;
+}
+
+.tooltippdf .tooltiptextpdf::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltippdf:hover .tooltiptextpdf {
+  visibility: visible;
+}
+
+/*
+  additional menu
+*/
+
+@media only screen and (max-width:640px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo-area {
+    text-align: center;
+  }
+
+  .menu-area,
+  .logo-area {
+    width: 100%;
+    float: none;
+  }
+
+  ul li a {
+    font-size: 15px;
+  }
+
+  .menu-area ul {
+    float: none;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .menu-area ul li {
+    padding: 0 5px;
+    border: 0;
+  }
+
+  .menu-area ul li a,
+  .menu-area ul #ms-item a {
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  .menu-area ul #ques-mark img {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+  }
+
+  .class-selection {
+    padding: 15px 0 25px;
+  }
+
+  .class-selection select {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .form-area {
+    padding: 50px 0 80px;
+  }
+
+  .color-box {
+    width: 30px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  .form-area input,
+  .form-area textarea {
+    font-size: 15px;
+    padding: 5px 8px;
+    width: 85%;
+  }
+
+  .form-area textarea {
+    padding: 8px 10px;
+    border-radius: 20px;
+  }
+
+  .form-area input[type=checkbox] {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  .selection-part {
+    width: 90%;
+    float: none;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .selection-part:last-child {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .selection-part .icon-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .selection-part img {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .selection-part select,
+  .color-box,
+  .selection-part .icon-box {
+    border: 3px solid #fff;
+  }
+
+  .box-left-icon {
+    width: 20%;
+  }
+
+  .form-area #send {
+    padding: 2px;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .message-link .container {
+    width: 95%;
+  }
+
+  .message span {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .message .delete {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bottom-area {
+    padding: 0;
+  }
+
+  .bottom-area h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .logo-area {
+    text-align: center;
+  }
+
+  .menu-area,
+  .logo-area {
+    width: 100%;
+    float: none;
+  }
+
+  .menu-area ul {
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .menu-area ul #ques-mark img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .link-form .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:800px) {
+  .logo-area {
+    width: 20%;
+    float: left;
+  }
+
+  .menu-area {
+    float: right;
+    width: 80%;
+  }
+
+  .menu-area ul {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

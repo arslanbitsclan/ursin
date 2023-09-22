@@ -1,0 +1,227 @@
+.header-area {
+  padding-bottom: 95px!important;
+}
+
+.select-selected,
+.select-items div {
+  background-color: #43935B;
+  border: 2px solid #43935B;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background: #3a8650;
+}
+
+.form-area {
+  background: url(../images/bg-hw.svg) no-repeat center;
+  background-size: cover;
+}
+
+.form-area #send,
+.bottom-area {
+  color: #43935B;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.message tr td:nth-child(4) {
+  float: right;
+  width: 15%;
+}
+
+.message .delete {
+  background: #90b59b;
+}
+
+.message tr td:nth-child(1) {
+  width: 15%;
+}
+
+.message tr td:nth-child(2) {
+  width: 10%;
+}
+
+.message tr td:nth-child(3) {
+  width: 60%;
+}
+
+.message tr td:nth-child(1),
+.message tr td:nth-child(2) {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.homework-btn {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.homework-btn li a {
+  background: #43935b;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.homework-btn li a:hover {
+  background: #1b7235;
+}
+
+.menu-area ul .drp-itm i {
+  transition: ;
+}
+
+.menu-area ul li {
+  position: relative;
+}
+
+.menu-area ul .drp-itm:first-child {
+  padding-left: 0px;
+}
+
+.menu-area ul li > ul {
+  position: absolute;
+  top: 35%;
+  left: 8px;
+  width: 250px;
+  float: none;
+  display: block;
+  text-align: left;
+  z-index: 9999;
+  display: none;
+}
+
+.menu-area ul li > ul li {
+  display: block;
+  padding: 8px 0 0;
+  border-right: 0;
+}
+.menu-area ul .drp-itm:first-child i{
+  margin-left: 3px;
+}
+.menu-area ul li:hover > ul {
+  display: block;
+}
+
+.menu-area ul .drp-itm:hover > ul li a {
+  transform: scale(1);
+}
+
+.menu-area ul .drp-itm:hover i {
+  opacity: 0;
+}
+
+.menu-area ul #wh-item > ul li:hover a {
+  color: #1e6634;
+}
+
+.custom-select {
+  width: ;
+  float: left;
+}
+
+.sec-left-btn {
+  width: 50%;
+  float: right;
+}
+
+.sec-left-btn ul {
+  float: right;
+  margin: 0;
+}
+
+.sec-left-btn ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+.sec-left-btn ul li a {
+  padding: 8px 20px;
+  background: #43935b;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.sec-left-btn ul li:last-child a {
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-left-btn ul li:hover a {
+  background: #297841;
+}
+
+.class-selection {
+  padding: 30px 0 75px;
+}
+
+.sec-late-homework {
+  color: gray;
+}
+
+.sec-late-homework .message .delete {
+  background: #c0c0c0;
+}
+
+@media all and (max-width:640px) {
+
+  .message tr td:nth-child(1),
+  .message tr td:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .message tr td:nth-child(4) {
+    width: 10%;
+    float: none;
+  }
+
+  .class-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-select {
+    margin-bottom: 20px;
+    float: none;
+  }
+
+  .sec-left-btn {
+    width: 100%;
+    float: none;
+  }
+
+  .sec-left-btn ul {
+    text-align: center;
+    float: none;
+  }
+
+  .sec-left-btn ul li {
+    float: none;
+    display: block;
+  }
+
+  .sec-left-btn ul li:last-child {
+    text-align: center;
+    display: inline-flex;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+}

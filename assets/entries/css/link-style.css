@@ -1,0 +1,31 @@
+.select-selected,
+.select-items div{
+  background-color: #94427F;
+  border: 2px solid #94427F;
+}
+.select-items div:hover,
+.same-as-selected{
+  background: #883773;
+}
+.form-area{
+  background: url(../images/bg-lnk.svg) no-repeat center;
+  background-size: cover;
+}
+.form-area #send, .bottom-area{
+  color: #94427F;
+}
+.message{
+  margin-bottom: 20px;
+}
+.message tr td:nth-child(2){
+  float: right;
+  width: 0%;
+}
+.message .delete{
+  background: #ca88b9;
+}
+.message span{
+  font-weight: 400;
+  font-size: 18px;
+}
+

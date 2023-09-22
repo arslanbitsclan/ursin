@@ -1,0 +1,290 @@
+body {
+  font-weight: 400;
+}
+
+.header-area {
+  overflow: visible;
+  padding: 20px 0 50px;
+}
+
+.container {
+  max-width: 95%;
+  width: 80%;
+}
+
+.logo-area img {
+  width: 125px;
+}
+
+.class-select-area,
+.three-switch,
+.icon-set {
+  float: left;
+}
+
+.class-select-area {
+  width: 35%;
+}
+
+.custom-select {
+  width: 70%;
+}
+
+.select-selected:after {
+  top: 25px;
+  right: ;
+  border-color: #0076A4 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #0076A4 transparent;
+  top: 18px;
+  right: ;
+}
+
+.select-items div,
+.select-selected {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid transparent;
+  font-size: 25px;
+
+}
+
+.select-items div:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.three-switch {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-set {
+  width: 20%;
+}
+
+.switch-toggle {
+  float: left;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch-toggle input + label {
+  padding: 7px;
+  float: left;
+  color: #000;
+  cursor: pointer;
+}
+
+.switch-toggle input:checked + label {
+  background: #0076A4;
+  color: #fff;
+}
+
+.switch-toggle input:first-child:checked + label {
+  background: #0076A4;
+  color: #fff;
+  border-radius: 25px 0 0 25px;
+}
+
+.switch-toggle .lst-cld:checked + label {
+  background: #0076A4;
+  color: #fff;
+  border-radius: 0 25px 25px 0;
+}
+
+.icon-set ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-set ul li {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.icon-set ul li i {
+  transition: 0.3s;
+}
+
+.icon-set ul li:hover i {
+  transform: scale(1.1);
+}
+
+.icon-set ul li:nth-child(3):hover i {
+  transform: rotate(-45deg);
+}
+
+.table-data {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.table-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-data table tr td {
+  padding: 7px 0;
+}
+
+td {
+  font-size: 25px;
+}
+
+.bigfnt {
+  font-size: 30px;
+}
+
+
+.border-top td {
+  border-top: 2px solid #4B83AF;
+}
+
+.border-top td:first-child {
+  border-top: 0;
+}
+
+.border-top td:nth-child(2) {
+  background: #0076A4;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.table-data table tr td:nth-child(1) {
+  width: 12%;
+  color: #0076A4;
+}
+
+.table-data table tr td:nth-child(2) {
+  width: 5%;
+}
+
+.table-data table tr td:nth-child(3) {
+  width: 15%;
+  text-align: left;
+  padding-left: 12px;
+  color: #9EA4AB;
+}
+
+.table-data table tr td:nth-child(4) {
+  width: 68%;
+  padding-left: 5px;
+}
+
+.table-data table tr:nth-child(even) td:nth-child(4) {
+  background: #EDEEF0;
+}
+
+.table-data table tr:hover td:nth-child(3),
+.table-data table tr:hover td:nth-child(4) {
+  background: bisque;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 130%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media all and (min-width:1920px) {
+  .custom-select {
+    width: 50%;
+  }
+
+  td {
+    font-size: 30px;
+  }
+
+  .bigfnt {
+    font-size: 35px;
+  }
+
+}
+
+@media all and (min-width:2560px) {
+  .custom-select {
+    width: 40%;
+  }
+
+  td {
+    font-size: 40px;
+  }
+
+  .bigfnt {
+    font-size: 45px;
+  }
+
+}
+
+@media all and (min-width:3840px) {
+  
+  td {
+    font-size: 55px;
+  }
+
+  .bigfnt {
+    font-size: 65px;
+  }
+
+  .border-top td {
+    border-top: 4px solid #4B83AF;
+  }
+}

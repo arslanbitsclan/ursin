@@ -1,0 +1,45 @@
+.select-selected,
+.select-items div{
+  background-color: #C0923B;
+  border: 2px solid #C0923B;
+}
+.select-items div:hover,
+.same-as-selected{
+  background: #b18635;
+}
+.form-area{
+  background: url(../images/bg-cld.svg) no-repeat center;
+  background-size: cover;
+}
+.form-area #send, .bottom-area{
+  color: #C0923B;
+}
+.message{
+  margin-bottom: 20px;
+}
+
+.message tr td:nth-child(3){
+  float: right;
+  width: 0%;
+}
+.message .delete{
+  background: #dcc394;
+}
+.message tr:first-child td{
+  font-weight: 400;
+  font-size: 18px;
+}
+.message tr td:first-child{
+  width: 15%;
+}
+
+@media all and (max-width:640px){
+  .message tr td:nth-child(1),
+  .message tr td:nth-child(2){
+    font-size: 16px;
+  }
+  .message tr td:nth-child(3) {
+    width: 10%;
+    float: none;
+  }
+}

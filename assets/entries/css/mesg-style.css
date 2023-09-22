@@ -1,0 +1,36 @@
+.select-selected,
+.select-items div{
+  background-color: #00A0EF;
+  border: 2px solid #00A0EF;
+}
+.select-items div:hover,
+.same-as-selected{
+  background: #048CCC;
+}
+.message-form{
+  background: url(../images/bg4.svg) no-repeat center;
+  background-size: cover;
+}
+.form-area #send, .bottom-area{
+  color: #00A0EF;
+}
+.message{
+  margin-bottom: 20px;
+}
+.message tr td:nth-child(3){
+  text-align: right;
+  padding-right: 30px;
+}
+.message tr td:nth-child(4){
+  text-align: center;
+  width: 15%;
+}
+.message .delete{
+  background: #b2d1e0;
+  float: right;
+}
+.message tr:first-child td{
+  font-weight: 400;
+  font-size: 18px;
+}
+

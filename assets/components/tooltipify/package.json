@@ -1,0 +1,34 @@
+{
+  "name": "jquery-tooltipify",
+  "version": "1.0.3",
+  "description": "jQuery Tooltipify creates a slide in stylable tooltip to replace the default browser tooltip.",
+  "main": "lib/jquery-tooltipify.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs \"src/jquery-tooltipify.js\" -o \"lib/jquery-tooltipify.min.js\" && node-sass src/tooltipify.scss lib/tooltipify.css & cleancss  lib/tooltipify.css -o lib/tooltipify.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentkeizer/tooltipify.git"
+  },
+  "keywords": [
+    "jquery",
+    "tooltipify",
+    "tooltip",
+    "title"
+  ],
+  "author": "vincentkeizer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentkeizer/tooltipify/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.5.4",
+    "node-sass": "^4.12.0",
+    "clean-css-cli": "^4.3.0"
+  },
+  "homepage": "https://github.com/vincentkeizer/tooltipify#readme"
+}

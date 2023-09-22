@@ -1,0 +1,982 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarea {
+  border-radius: 37px 0;
+}
+.delete{
+  cursor: pointer !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.manage-sub h1,
+.manage-sub h3,
+.manage-sub h4 {
+  font-weight: 200;
+}
+
+.my-student h3,
+.my-student h4,
+.code-list h3,
+.pas h3,
+h1,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+p,
+.in,
+.tarea {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  max-width: 960px;
+}
+
+.header {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0px;
+  margin-bottom: 60px;
+}
+
+.logo-area,
+nav,
+.help-icon {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+}
+
+.header img {
+  width: 130px;
+  height: auto;
+}
+
+.close-button {
+  float: right;
+  padding: 12px 0 0;
+}
+
+.close-button a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.close-button a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.heading-text {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+.heading-text h1,
+.heading-text h1 span {
+  font-size: 50px;
+  color: #5499c7;
+}
+
+.heading-text h1 span {
+  font-weight: 300;
+}
+
+.connection-section,
+.icon-bar,
+.input-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.connection-section {
+  padding: 20px 0 0;
+}
+
+.con-bottom {
+  padding: 50px 0 20px;
+}
+
+.input-section {
+  padding: 0 0 50px;
+}
+
+.connection-section table tr td h3 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 200;
+}
+
+.input-section table tr td {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px 5px;
+}
+
+.connection-section table tr td:last-child {
+  text-align: right;
+}
+
+.connection-section table tr td a img {
+  width: 18px;
+  height: auto;
+  padding: 3px;
+  margin-right: 5px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.in:active{
+  border-radius: 0 37px;
+  border: 2px solid #5499c7;
+}
+
+.in:focus{
+  outline-style:none !important;
+  box-shadow:none !important;
+  border-radius: 0 37px;
+  border: 2px solid #5499c7;
+}
+
+.icon-bar {
+  padding: 10px 5px;
+}
+
+.icon-bar ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+.icon-bar ul li a img {
+  width: 50px;
+  height: auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.icon-bar ul li a img:hover {
+  transform: scale(1.1);
+}
+
+.header-area {
+  margin-bottom: 0;
+}
+
+.input-section h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.input-section h3 span {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.input-section table {
+  margin-top: 0;
+}
+
+.input-section table .in {
+  width: 60%;
+  padding: 6px;
+}
+
+.input-section table tr td i {
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.input-section .delete {
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 50px;
+  background: #ea6565;
+  color: #fff;
+  cursor: auto;
+}
+
+.input-section .delete:hover {
+  transform: scale(1.1);
+  background: red;
+}
+
+.section-text p {
+  color: #999;
+}
+
+.con-bottom .section-text p:last-child {
+  margin-bottom: 0;
+}
+
+.connt-class {
+  margin-top: 20px;
+}
+
+.connt-class table tr td:last-child {
+  text-align: center;
+}
+
+nav {
+  width: 72%;
+  padding: 10px 0;
+}
+
+.help-icon {
+  width: 8%;
+  text-align: right;
+}
+
+.help-icon img:hover {
+  transform: scale(1.1);
+}
+
+.header ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  text-align: center;
+  float: right;
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 0 15px;
+  border-right: 2px solid #000;
+  box-sizing: border-box;
+}
+
+.header ul li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.help-icon img {
+  width: 30px;
+  height: auto;
+  margin-top: 8px;
+  transition: 0.5s;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: black;
+  background: none;
+  font-size: 25px;
+  display: block;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: 300;
+}
+
+.header ul li:hover a,
+.header ul .active a {
+  color: #5499C7;
+}
+
+.header ul li:hover a,
+.connection-section table tr td a img:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  margin: auto;
+  margin-top: 10%;
+}
+
+span {
+  font-size: 75px;
+  color: black;
+}
+
+.in {
+  width: 90%;
+  font-size: 22px;
+  padding: 8px;
+  border: 2px solid #c8c8c8;
+  box-sizing: border-box;
+  color: #a6a6a6;
+  border-radius: 37px 0;
+  text-align: center;
+}
+
+.tarea {
+  font-size: 28px;
+  padding: 8px 15px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  width: 100%;
+}
+  #view_parent_code{
+    cursor: pointer;
+  }
+  .img-svg{
+    width: 50px !important; 
+  }
+
+.close-btn-div{
+  justify-content: center !important;
+  display: grid !important;
+}
+.close-btn{
+   float: none !important;
+   background: #777d81 !important;
+}
+
+button,
+.button a,
+.input-section input[type=submit] {
+  padding: 6px;
+  background: #5499C7;
+  font-size: 25px;
+  color: white;
+  float: right;
+  display: block;
+  margin-top: 6px;
+  width: 140px;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 37px 0;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.3s;
+}
+
+button:hover,
+.button a:hover, .info:hover .tooltiptext,
+.input-section input[type=submit]:hover {
+  transform: rotate(5deg);
+    visibility: visible;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+
+button:active{
+  outline: none !important;
+}
+
+.text-row {
+  width: 100%;
+  overflow: hidden;
+  padding: 7px 0;
+}
+
+.your-class,
+.my-student,
+.code-list {
+  margin: auto;
+  margin-top: 10%;
+}
+
+.form-bottom .text-field {
+  padding: 8px 0;
+}
+
+.new-classes .text-field,
+.new-classes .button,
+.your-class .text-field,
+.your-class .button {
+  width: 40%;
+  float: left;
+  overflow: hidden;
+}
+
+.your-class .text-field {
+  width: 30%;
+}
+
+.text-row .button {
+  width: 70%;
+}
+
+.new-classes .button,
+.your-class .button,
+.my-student .button {
+  width: 20%;
+}
+
+
+.gray-guide,
+.new-classes form {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gray-guide {
+  color: gray;
+}
+
+.dropdown-box {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.db {
+  width: 100%;
+  overflow: hidden;
+}
+
+.dropdown-box select,
+.db select {
+  font-size: 25px;
+  padding: 10px 20px;
+  background: #eee;
+  width: 40%;
+  text-align: center;
+  margin: 10px 0;
+  color: #666;
+}
+
+.db {
+  background: white;
+}
+
+.drb {
+  width: 80%;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-box span {
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+   .tooltiptext{
+    visibility: hidden ;
+    background-color:black;
+    color:#fff ;
+    text-align: left ;
+    border-radius: 6px ;
+    padding: 5px 10px ;
+    position: absolute ;
+    z-index: 1 ;
+    font-size: 15px !important;
+    margin-top: 55px ;
+  }
+
+
+
+.dropdown-box .button,
+.db .button {
+  width: 50%;
+  float: right;
+  margin-top: -65px;
+}
+
+.form-top {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-top .text-area,
+.form-top .db,
+.from-top .button {
+  width: 40%;
+  float: left;
+  overflow: hidden;
+}
+
+.form-top .text-area {
+  font-size: 28px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.form-bottom {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-bottom .db select {
+  width: 100%;
+  padding: 7px;
+}
+
+.form-bottom .button,
+.code-list .button {
+  width: 50%;
+  float: right;
+}
+
+.form-bottom .button button,
+.code-list .button button {
+  float: right;
+}
+
+.jconfirm-box button:hover{
+ transform: none !important;
+}
+
+.jconfirm .jconfirm-box .jconfirm-buttons {
+
+    padding-bottom: 11px !important;
+    padding-right: 30% !important;
+
+}
+
+.per {
+  width: 70%;
+  float: left;
+}
+
+.form-mid {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-mid .button {
+  width: 30%;
+  float: right;
+}
+
+.from-top .button {
+  width: 20%;
+}
+
+.my-student,
+.box,
+.list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.my-student {
+  margin-bottom: 10%;
+}
+
+.student,
+.class,
+.btn {
+  width: 20%;
+  overflow: hidden;
+  float: left;
+}
+
+.btn {
+  width: 50%;
+  float: right;
+}
+
+.btn .button {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+
+.btn .button:nth-child(3) {
+  margin-right: 0;
+}
+
+.dashboard,
+.dabo {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.dashboard button {
+  margin-top: 20px;
+}
+
+.dabo:nth-child(odd) {
+  background: #F3F3F3;
+}
+
+.dabo {
+  border-radius: 5px;
+}
+
+.dabo-wrap {
+  width: 97%;
+  margin: auto;
+}
+
+.debo-icon img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+.ht {
+  width: 52%;
+}
+
+.sw {
+  width: 40%;
+}
+
+.ht,
+.sw {
+  margin-top: 8px;
+}
+
+.ht,
+.sw,
+.debo-icon {
+  overflow: hidden;
+  float: left;
+}
+
+.debo-icon {
+  width: 8%;
+}
+
+.ht h4 {
+  margin: 0;
+  margin-top: 6px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.sw .switch {
+  float: right;
+}
+
+.btn-set {
+  width: 70%;
+  float: left;
+}
+
+.btn-set .button {
+  width: 32%;
+  float: right;
+  margin-left: 2%;
+}
+
+.btn-set .button:last-child {
+  margin-left: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #B0C936;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.pas {
+  width: 100%;
+}
+
+.code-list .db {
+  width: 50%;
+  float: left;
+}
+
+.code-list .db select {
+  width: 80%;
+}
+
+.toggle-part {
+  padding: 30px 20px;
+  display: none;
+  margin-top: 30px;
+  background: #f7f7f7;
+}
+
+.dash-second .debo-icon {
+  opacity: 0;
+}
+
+.dash {
+  width: 100%;
+  overflow: hidden;
+}
+.jc-bs3-container{
+  width: 20% !important;
+}
+.jconfirm-buttons {
+    float: none !important;
+    margin-bottom: 25px !important;
+}
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+@media all and (max-width:768px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header ul {
+    float: none;
+  }
+
+  .header ul li {
+    margin-bottom: 8px;
+  }
+  .header ul li a {
+    font-size: 16px;
+  }
+
+  .logo-area,
+  nav {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px 0;
+  }
+
+  .logo-area {
+    margin-bottom: 10px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 30px;
+  }
+
+  .header img {
+    width: 120px;
+  }
+
+  .help-icon img {
+    width: 25px;
+  }
+
+  .help-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .icon-bar ul li a img {
+    width: 30px;
+  }
+
+  .icon-bar ul li {
+    margin-right: 5px;
+  }
+
+  .in,
+  .new-classes .text-field,
+  .new-classes .button,
+  .your-class .text-field {
+    width: 100%;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  button,
+  .button a,
+  .input-section table tr input[type=submit] {
+    font-size: 18px;
+  }
+
+  .btn-set {
+    width: 100%;
+    float: none;
+  }
+
+  .input-section table .in {
+    width: 90%;
+  }
+
+  .student,
+  .class,
+  .btn {
+    width: 18%;
+  }
+
+  .btn {
+    width: 64%;
+  }
+
+  .dropdown-box select,
+  .db select {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  span,
+  .dropdown-box span {
+    font-size: 25px;
+  }
+
+  .in {
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  .dropdown-box .button {
+    margin-top: -55px;
+  }
+
+  .tarea {
+    font-size: 18px;
+  }
+
+  .my-student button,
+  .button a {
+    padding: 4px 0;
+    width: 110px;
+  }
+
+  .debo-icon {
+    width: 12%;
+  }
+
+  .debo-icon img {
+    width: 30px;
+  }
+
+  .ht {
+    width: 62%;
+  }
+
+  .ht,
+  .sw {
+    margin-top: 2px;
+  }
+
+  .connection-section table tr td h3,
+  .heading-text h1,
+  .heading-text h1 span {
+    font-size: 35px;
+  }
+
+  .input-section table tr td i {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .input-section input[type=submit] {
+    padding: 4px;
+    font-size: 18px;
+  }
+
+  .slider:before {
+    height: 20px;
+    width: 20px;
+  }
+
+  .switch {
+    width: 55px;
+    height: 28px;
+  }
+
+  .ht h4 {
+    margin: 0;
+    margin-top: 3px;
+    font-size: 18px;
+  }
+
+  .sw {
+    width: 26%;
+  }
+
+  .form-top .text-area {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  button,
+  .button a,
+  .input-section input[type=submit] {
+    width: 90px;
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .form-bottom .db select {
+    padding: 4px;
+  }
+
+  .list {
+    font-size: 14px;
+  }
+
+
+}
